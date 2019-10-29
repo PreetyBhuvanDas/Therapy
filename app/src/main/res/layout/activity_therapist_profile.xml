@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    tools:context=".TherapistProfile">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/unnamed"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="5dp" />
+
+                    <TextView
+                        android:id="@+id/docRat"
+                        android:layout_width="60dp"
+                        android:padding="5dp"
+                        android:text="4.0"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/star"
+                        android:layout_height="28dp"
+                        android:layout_alignBottom="@id/img_profile"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg"
+                         />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/Doctorname"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=" Dr Mona Mossad"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/docPrice"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+                                android:text="$200"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/nameq"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/hr"
+                                android:layout_marginEnd="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorgrey"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/docDress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Ph.D in Psychology"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/docLan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/colorgrey"
+                        android:text="14 year of Experience"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/date"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="About Me"
+                                android:hint=""
+                                android:gravity="center"
+                                android:layout_marginRight="10dp"/>
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:id="@+id/tvEmpty"
+                                android:text="Read More"
+                                android:gravity="right"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="20dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/profile"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#E1E1E1"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/dateAvail"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Specialities"
+                                android:hint=""
+                                android:gravity="center"
+                                android:layout_marginRight="10dp"/>
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:id="@+id/tv"
+                                android:text="View All"
+                                android:gravity="right"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="30dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/et"
+                                android:padding="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="Anxiety"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/et"
+                                android:padding="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="Depression"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/et"
+                                android:padding="10dp"
+                                android:text="Anger"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/divider12"
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#E1E1E1"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/text"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="20dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Services Offered"
+                                android:hint=""
+                                android:gravity="center"
+                                android:layout_marginRight="10dp"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:padding="10dp"
+                                android:drawablePadding="10dp"
+                                android:drawableLeft="@drawable/chat"
+                                android:layout_marginRight="10dp"
+                                android:text="Chat"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:padding="10dp"
+                                android:drawablePadding="10dp"
+                                android:drawableLeft="@drawable/video"
+                                android:layout_marginRight="10dp"
+                                android:text="Video Call"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:padding="10dp"
+                                android:drawablePadding="10dp"
+                                android:drawableLeft="@drawable/phone"
+                                android:text="Audio Call"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/divider2"
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#E1E1E1"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/det"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="7 Slots Available"
+                    android:hint=""
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Today"
+                    android:textColor="@color/colorPrimary"
+                    android:drawableRight="@drawable/expand"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="All Sessions are 1 hour-long"
+                    android:textColor="@color/colorgrey"
+                    android:drawableLeft="@drawable/info"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/et"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="10:30 AM"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/et"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="11:30 AM"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/et"
+                    android:padding="10dp"
+                    android:text="12:30 PM"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+            <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#E1E1E1"
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/review"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Reviews (9)"
+                    android:hint=""
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tev"
+                    android:text="See More"
+                    android:gravity="right"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="12dp"
+                    android:text="by Anon-Doha"
+                    android:textColor="@color/colorgrey"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/review"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="March, 2019"
+                    android:textColor="@color/colorgrey"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/colorwhite"
+                    android:text="BOOK AN APPOINTMENT"
+                    android:background="@drawable/et_bg"
+                    android:layout_height="40dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
